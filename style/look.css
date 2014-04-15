@@ -1,0 +1,27 @@
+body {
+
+background:#EAF4FF;
+text-align: center;
+}
+
+
+#container {
+background-image : url("../images/logo.fw.png");
+height: 800px;
+width: 800px;
+}
+
+
+#writingbox {
+position: fixed;
+bottom:0px;
+width: 100%;
+}
+
+
+#chatty {
+border: 2px solid;
+border-radius: 5px;
+border-color: #00D9D9;
+width: 90%;
+}
