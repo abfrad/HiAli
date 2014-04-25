@@ -1,21 +1,45 @@
 body {
-
+font-family:"Arial";
 background:#EAF4FF;
-text-align: center;
+margin:0px;
+padding: 0px;
+}
+
+.message {
+padding-top:10px;
+padding-bottom:10px;
+float: bottom;
+color: blue;
+margin-bottom: 20px;
 }
 
 
 #container {
-background-image : url("../images/logo.fw.png");
-height: 800px;
-width: 800px;
+background-image : url("../images/bg.fw.png");
+background-repeat: auto; 
+min-height:100%;
+padding: 0px;
+width: 100%;
+
+}
+
+#chatroom {
+margin-left:10px;
+margin-right:10px;
+
+
+
 }
 
 
 #writingbox {
+margin:0px;
+padding: 0px;
 position: fixed;
 bottom:0px;
-width: 100%;
+width:100%;
+clear:both;
+
 }
 
 
@@ -23,5 +47,48 @@ width: 100%;
 border: 2px solid;
 border-radius: 5px;
 border-color: #00D9D9;
-width: 90%;
+width: 85%;
+font-size:2.8vw;
+color:#E15E6A;
+background: white;
+}
+
+#send {
+border: 2px solid;
+border-radius: 5px;
+border-color: #00D9D9;
+font-size:2.8vw;
+background-color: #4EF377;
+color:#FFFF4D;
+width: 13%;
+
+}
+
+.message {
+border: 2px solid;
+border-radius: 5px;
+border-color: #00D9D9;
+max-width: 50%;
+min-width:20%;
+font-size:2.8vw;
+color:#E15E6A;
+background: white;
+text-wrap:supress;
+word-wrap: break-word;
+clear: both;
+padding: 5px;
+}
+
+.in {
+
+float:left;
+}
+.out {
+float:right;
+}
+
+
+#block {
+height: 100px;
+clear:both;
 }
