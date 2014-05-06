@@ -58,10 +58,8 @@
 		<div id='container'>
 		
 			<div id="chatroom">
-													
-				
+														
 				<div id='writingbox'>
-				
 					
 						<input type='text'  id="chatty" onkeydown='Javascript: if (event.keyCode==13) toali()' autocomplete='off'>
 						
@@ -69,16 +67,12 @@
 					
 				</div>
 				
-			</div>	
-			
+			</div>
 				
-				
-			
 			    <div id='block'>
 				
 				</div>
-				
-				
+					
 		</div>
 	</body>
 

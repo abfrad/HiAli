@@ -1,0 +1,15 @@
+HI ALI DATA ENTRY LOG
+
+
+
+match (n:SPRONOUN{val:"I"}),(m:NAME{val:"Ali"})  create (n)-[r:IS{val:"am"}]->(m)
+
+match (n:SPRONOUN{val:"I"}),(m:ADJ{val:"happy"})  create (n)-[r:IS{val:"am"}]->(m)
+
+/////////////
+
+MATCH (n {val:"I"})-[r:IS]->(m {keyword:"pname"})
+
+RETURN m.val
+
+//////////////
