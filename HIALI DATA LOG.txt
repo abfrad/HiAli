@@ -13,3 +13,35 @@ MATCH (n {val:"I"})-[r:IS]->(m {keyword:"pname"})
 RETURN m.val
 
 //////////////
+
+ I used php5.4 cause composer doesnt support php 5.5
+
+/////
+
+create (n:SUBJECT {val:"Afghanistan" , keyword:"place"})
+
+MATCH (n)-[r:IS]->(m)
+WHERE n.val="I"  AND m.keyword="place" AND r.val="live in"
+RETURN m.val
+
+match (m:SPRONOUN {val:"I"})-[r:IS {val:"live in"}]->(n:SUBJECT {val:"Heidelberg"}) set r.val="livein"
+match (n:SPRONOUN{val:"I"}),(m:NAME{val:"Abdullah"})  create (n)-[r:IS{val:"workfor"}]->(m)
+match (n:SPRONOUN{val:"I"}),(m:SUBJECT{val:"Brain"})  create (n)-[r:IS{val:"have"}]->(m)
+match (n:SPRONOUN{val:"I"}),(m:SUBJECT{val:"Robot"})  create (n)-[r:IS{val:"am" , prep:"a"}]->(m)
+
+
+
+match (n:SUBJECT {val:"Brain"}) set n.val="brain"
+
+match (m:SUBJECT {val:"brain"})-[r:IS {val:"made of"}]->(n:SUBJECT {val:"Code"}) set r.val="madeof"
+// I cannot pass space in Neo4j
+
+
+MATCH (n)-[r:IS]->(m)
+WHERE n.val="I" AND m.val="Abdullah" AND r.val="workfor"
+RETURN r
+
+match (n:NAME {val:"Abdullah"}) set n.val="abdullah"
+
+
+
