@@ -2994,3 +2994,4 @@ Caused by: org.neo4j.graphdb.ConstraintViolationException: Node record Node[1748
 2014-05-07 06:51:24.317+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 102ms [total block time: 168975.8s]
 2014-05-07 14:51:25.267+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 107ms [total block time: 168975.9s]
 2014-05-07 18:51:25.742+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 128ms [total block time: 168976.03s]
+2014-05-07 20:51:25.983+0000 WARN  [o.n.k.EmbeddedGraphDatabase]: GC Monitor: Application threads blocked for an additional 132ms [total block time: 168976.16s]

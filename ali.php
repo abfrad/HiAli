@@ -5,14 +5,11 @@
 		$client = new Everyman\Neo4j\Client('localhost', 7474);
 		
 		$message =$_GET['message'];
-		$message = strtolower($message);
-		
+		//Convert whole string into lower-case letters
+		$message = strtolower($message);	
 		//sort out incoming message
-	
 		$words = explode ( " " , $message , 20) ;
 		$sentence_len= sizeof($words);
-		
-		
 		
 		//INFORMATIVE QUESTIONS
 		if ( $words[0]=="how" or $words[0]=="who" or $words[0]=="where" or $words[0]=="what" or $words[0]=="when" )
