@@ -8,14 +8,10 @@ Introduction:
  The use case very wide and to mention a few: 
 1.	Interface for the functionality of a large complex system e.g. power plants, factories etc. where this robot is responsible at all time that everything is going well.
 
-
 2.	Personal life assistant, where the robot is responsible of all the schedules, spending, special occasions, trips, location, well-being somewhat more humanoid version of google account.
 
+
 At this point the project’s goal is to build a prototype of the software, with basic functionalities implemented to be tested in practice. That is all for Ali to know about in short, upcoming is the documentation of the HiALi prototype implementation.
-
-
-
-
 
 
 
@@ -58,12 +54,12 @@ For the communication between the server and client XMLHttp Reuqest object have 
 
 <b>Back End:</b>
 
-Neo4j is a graph NOSQL database that enables to store data in nodes and connect them to each other with relationships. Both nodes and relationships can hold data inside properties which is very convenient for storing words and also directives and keywords for them to mimic meaning in a way. 
+<a href="https://github.com/neo4j/neo4j"> Neo4j </a> is a graph NOSQL database that enables to store data in nodes and connect them to each other with relationships. Both nodes and relationships can hold data inside properties which is very convenient for storing words and also directives and keywords for them to mimic meaning in a way. 
 In Nodes I have implemented People and Phenomenon as SUBJECT while the have properties as “pname” that stands for person and “tname” that stands for any other Phenomena and by Phenomena it is meant any visible and invisible known existence for example “Gravity”. There are nodes that group WH words or GREET or RECATION. Each node has a directive and a keyword, directive will enable script to know which word is being referred to and keyword is the way to find pointed word. The script can find its way from one word to another via relationships.
 Relationships store mostly verbs mixed with prepositions and conjunctions. 
 
 
-Note: Neo4jPHP REST API developed by <a href="#"> Josh Adell </a> have been used as PHP dependency library to connect with Neo4j server.
+Note: <a href="https://github.com/jadell/neo4jphp"> Neo4jPHP </a> REST API developed by <a href="https://github.com/jadell"> Josh Adell </a> have been used as PHP dependency library to connect with Neo4j server.
 
  
 
