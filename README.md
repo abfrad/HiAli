@@ -36,7 +36,7 @@ The Following flow chart shows the mechanism all three parts work together:
 
 
 
-Implementation UI: 
+<b>Implementation UI: </b>
 
 
  
@@ -45,7 +45,7 @@ Messages are appended in bubble chat style using JavaScript runtime HTML element
  
 
 
-Controller:
+<b>Controller:</b>
 
 Controller is basically responsible to break down the sentence, identify to-be verbs, auxiliaries, subjects, objects in the meantime ask data-base for direction and send out queries and structure the response message. It is made of three major parts: Informative Questions, Yes/No Questions and Statements. 
 Note: The code has been commented very in detail.
@@ -53,23 +53,21 @@ Informative Questions looks for a WH word in the beginning of the sentence inclu
 Yes/No Questions is rather simpler that the WH section. It detects wether the first word is an auxiliary and then admits the following word as subject and the last word as object and uses the rest of sentence a key-phrase and looks up in the database whether there is a relationship from subject to object considering the key-phrase.
 Statement part is where the user enters information which Ali might store in its brain. For example he will re-learn user’s name and over write and refers to that name as “you”.
 PHP have been used for the server script because it is a very powerful tool for general software development with variety of functions especially with string.
-
  
-
-
 For the communication between the server and client XMLHttp Reuqest object have been used which is available in JavaScript that provides background data transfer between server and client also known as AJAX (Asynchronous JavaScript and XML). 
 
-Back End:
+<b>Back End:</b>
+
 Neo4j is a graph NOSQL database that enables to store data in nodes and connect them to each other with relationships. Both nodes and relationships can hold data inside properties which is very convenient for storing words and also directives and keywords for them to mimic meaning in a way. 
 In Nodes I have implemented People and Phenomenon as SUBJECT while the have properties as “pname” that stands for person and “tname” that stands for any other Phenomena and by Phenomena it is meant any visible and invisible known existence for example “Gravity”. There are nodes that group WH words or GREET or RECATION. Each node has a directive and a keyword, directive will enable script to know which word is being referred to and keyword is the way to find pointed word. The script can find its way from one word to another via relationships.
 Relationships store mostly verbs mixed with prepositions and conjunctions. 
 
 
-Note: Neo4jPHP REST API developed by Josh Adell have been used as PHP dependency library to connect with Neo4j server.
+Note: Neo4jPHP REST API developed by <a href="#"> Josh Adell </a> have been used as PHP dependency library to connect with Neo4j server.
 
  
 
-Future Objectives
+<b>Future Objectives:</b>
 
 My future objectives and vision for Hi Ali is as following
 
@@ -81,7 +79,7 @@ My future objectives and vision for Hi Ali is as following
 6.	Fixing use-case for Ali
 
 
-Conclusion:
+<b> Conclusion:</b>
 
 The module have been beneficial for me by giving me a chance to explore my abilities in term of coming up with an idea and building on it. I came across some standards and good practices and tools for Software Architecture which I have not been familiar before. Developing the prototype I have promoted my skills and learned a lot using new technologies like Neo4j.  
 
