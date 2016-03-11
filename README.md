@@ -6,7 +6,9 @@
   Hi Ali is the project I had in mind for a long time, although numerous projects of same goal can be found throughout the history and evolution of computer sciences, but I am determined to apply the idea I have which without further ado I will explain:
   Hi Ali is intelligent software that has the ability to listen to human input sentences, break them down into words and understand the structure, tense, meaning and the goal of the sentence and responds using its specially structured stored data and the implemented logic inside the scripted code.
  The use case very wide and to mention a few: 
+ 
 1.	Interface for the functionality of a large complex system e.g. power plants, factories etc. where this robot is responsible at all time that everything is going well.
+
 2.	Personal life assistant, where the robot is responsible of all the schedules, spending, special occasions, trips, location, well-being somewhat more humanoid version of google account.
 
 
