@@ -8,7 +8,9 @@ Introduction:
  The use case very wide and to mention a few: 
 1.	Interface for the functionality of a large complex system e.g. power plants, factories etc. where this robot is responsible at all time that everything is going well.
 
+
 2.	Personal life assistant, where the robot is responsible of all the schedules, spending, special occasions, trips, location, well-being somewhat more humanoid version of google account.
+
 At this point the project’s goal is to build a prototype of the software, with basic functionalities implemented to be tested in practice. That is all for Ali to know about in short, upcoming is the documentation of the HiALi prototype implementation.
 
 
@@ -17,7 +19,8 @@ At this point the project’s goal is to build a prototype of the software, with
 
 
 
-Architecture:
+
+<b>Architecture:</b>
 
 
 Ali is made of three major parts: UI, Controller and Back End. Since web technology has been used to implement the project, the three parts are using the following web technologies.
@@ -30,14 +33,6 @@ Back End: Neo4J is a graph database that has been used to implement the data sto
 
 Using this mechanic I have implemented a data graph for Ali that shapes all of his understanding of the world.
 The Following flow chart shows the mechanism all three parts work together:
-
-
-
- 
-
-
-
-
 
 
 
@@ -69,11 +64,10 @@ Neo4j is a graph NOSQL database that enables to store data in nodes and connect 
 In Nodes I have implemented People and Phenomenon as SUBJECT while the have properties as “pname” that stands for person and “tname” that stands for any other Phenomena and by Phenomena it is meant any visible and invisible known existence for example “Gravity”. There are nodes that group WH words or GREET or RECATION. Each node has a directive and a keyword, directive will enable script to know which word is being referred to and keyword is the way to find pointed word. The script can find its way from one word to another via relationships.
 Relationships store mostly verbs mixed with prepositions and conjunctions. 
 
+
 Note: Neo4jPHP REST API developed by Josh Adell have been used as PHP dependency library to connect with Neo4j server.
 
  
-The Exhibit shows the relationship between I(Ali) and Heidelberg which stores “livein” and means “I live in Heidelberg” to the script.
-
 
 Future Objectives
 
@@ -86,7 +80,8 @@ My future objectives and vision for Hi Ali is as following
 5.	In a bigger picture developing Ali into more that keyboard-screen application into other variety of input and output systems. 
 6.	Fixing use-case for Ali
 
-Conclusion
+
+Conclusion:
 
 The module have been beneficial for me by giving me a chance to explore my abilities in term of coming up with an idea and building on it. I came across some standards and good practices and tools for Software Architecture which I have not been familiar before. Developing the prototype I have promoted my skills and learned a lot using new technologies like Neo4j.  
 
